@@ -58,13 +58,13 @@ fn enum_default(name: &syn::Ident, variants: &syn::punctuated::Punctuated<syn::V
         Some(v) => v,
         None => panic!("enum variants len is 0"),
     };
-    let first_variant_name = &first_variant.ident;
+    let first_variant_name = first_variant.ident.clone();
     let f = variant_default(&first_variant.fields);
     let f:proc_macro2::TokenStream = f.into();
     quote!{
         impl std::default::Default for #name {
             fn default() -> #name{
-                #name::#first_variant_name#f.into()
+                #name::#first_variant_name #f.into()
             }
         }
     }

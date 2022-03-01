@@ -1,8 +1,12 @@
 [package]
 name = "pi_enum_default_macro"
 version = "0.1.0"
-authors = ["suncy <suncy@gmail.com>"]
-edition = "2018"
+authors = ["suncy <530739162@qq.com>"]
+edition = "2021"
+description = "Provides a declaration macro that implements the Default for enumeration types"
+repository = "https://github.com/GaiaWorld/pi_enum_default_macro.git"
+license = "MIT OR Apache-2.0"
+keywords = ["pi", "pi_enum_default_macro", "enum_default_macro", "enum_default"]
 
 [lib]
 proc-macro = true
