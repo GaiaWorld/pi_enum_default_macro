@@ -6,7 +6,7 @@ edition = "2021"
 description = "Provides a declaration macro that implements the Default for enumeration types"
 repository = "https://github.com/GaiaWorld/pi_enum_default_macro.git"
 license = "MIT OR Apache-2.0"
-keywords = ["pi", "pi_enum_default_macro", "enum_default_macro", "enum_default"]
+keywords = ["pi", "pi_enum_default", "enum_default"]
 
 [lib]
 proc-macro = true
